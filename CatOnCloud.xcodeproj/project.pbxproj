@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		157DC06F3FA9113875C4749B /* Pods_CatOnCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B4EB60C2733BD883D62BDD /* Pods_CatOnCloud.framework */; };
+		2C9FF9351DB605C7635D5898 /* Pods_CatOnCloudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082B5054E76F751EC29B4D3C /* Pods_CatOnCloudTests.framework */; };
+		501931101F8B1EBF00E97990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5019310F1F8B1EBF00E97990 /* AppDelegate.swift */; };
+		501931121F8B1EBF00E97990 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501931111F8B1EBF00E97990 /* LoginViewController.swift */; };
+		501931151F8B1EBF00E97990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501931131F8B1EBF00E97990 /* Main.storyboard */; };
+		501931171F8B1EBF00E97990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501931161F8B1EBF00E97990 /* Assets.xcassets */; };
+		5019311A1F8B1EBF00E97990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501931181F8B1EBF00E97990 /* LaunchScreen.storyboard */; };
+		5019313F1F8B1FF800E97990 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5019313E1F8B1FF800E97990 /* LoginViewModel.swift */; };
+		501931421F8B4A7100E97990 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501931411F8B4A7100E97990 /* HomeViewController.swift */; };
+		5028B5911F9D8F3E00250FA2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028B5901F9D8F3E00250FA2 /* HomeViewModel.swift */; };
+		5028B5931F9DA5C500250FA2 /* HomeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028B5921F9DA5C500250FA2 /* HomeCellViewModel.swift */; };
+		502DECD01F983E220031D4DC /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502DECCF1F983E220031D4DC /* LoginUITests.swift */; };
+		505FCA381F9F1FA70057AB7E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505FCA371F9F1FA70057AB7E /* R.generated.swift */; };
+		5085B8081F8F1AAF00433A74 /* LoginViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085B8071F8F1AAF00433A74 /* LoginViewModelSpec.swift */; };
+		50B4EF4B1F9DAC0700063B66 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B4EF4A1F9DAC0700063B66 /* HomeTableViewCell.swift */; };
+		50D81A8D1FA0041000F4FC1B /* HomeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D81A8C1FA0041000F4FC1B /* HomeCellModel.swift */; };
+		DC0F426794B7C920A5E59E27 /* Pods_CatOnCloudUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287257DBDC95D4ED147C178C /* Pods_CatOnCloudUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		501931211F8B1EBF00E97990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 501931041F8B1EBF00E97990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5019310B1F8B1EBF00E97990;
+			remoteInfo = CatOnCloud;
+		};
+		5019312C1F8B1EBF00E97990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 501931041F8B1EBF00E97990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5019310B1F8B1EBF00E97990;
+			remoteInfo = CatOnCloud;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		082B5054E76F751EC29B4D3C /* Pods_CatOnCloudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatOnCloudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A85CE0F5593BA44CD433E8 /* Pods-CatOnCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatOnCloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatOnCloud/Pods-CatOnCloud.release.xcconfig"; sourceTree = "<group>"; };
+		1D28788D126D0FF72DC9E204 /* Pods-CatOnCloudUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatOnCloudUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatOnCloudUITests/Pods-CatOnCloudUITests.release.xcconfig"; sourceTree = "<group>"; };
+		287257DBDC95D4ED147C178C /* Pods_CatOnCloudUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatOnCloudUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2957B0794B8CD25F575B326C /* Pods-CatOnCloudTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatOnCloudTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatOnCloudTests/Pods-CatOnCloudTests.debug.xcconfig"; sourceTree = "<group>"; };
+		396885F400EF903812CC1D72 /* Pods-CatOnCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatOnCloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatOnCloud/Pods-CatOnCloud.debug.xcconfig"; sourceTree = "<group>"; };
+		5019310C1F8B1EBF00E97990 /* CatOnCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatOnCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5019310F1F8B1EBF00E97990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		501931111F8B1EBF00E97990 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		501931141F8B1EBF00E97990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		501931161F8B1EBF00E97990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		501931191F8B1EBF00E97990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5019311B1F8B1EBF00E97990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		501931201F8B1EBF00E97990 /* CatOnCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatOnCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		501931261F8B1EBF00E97990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5019312B1F8B1EBF00E97990 /* CatOnCloudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatOnCloudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		501931311F8B1EBF00E97990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5019313E1F8B1FF800E97990 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		501931411F8B4A7100E97990 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5028B5901F9D8F3E00250FA2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5028B5921F9DA5C500250FA2 /* HomeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellViewModel.swift; sourceTree = "<group>"; };
+		502DECCE1F983E220031D4DC /* CatOnCloudUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatOnCloudUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		502DECCF1F983E220031D4DC /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
+		505FCA371F9F1FA70057AB7E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		5085B8071F8F1AAF00433A74 /* LoginViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelSpec.swift; sourceTree = "<group>"; };
+		50B4EF4A1F9DAC0700063B66 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		50D81A8C1FA0041000F4FC1B /* HomeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModel.swift; sourceTree = "<group>"; };
+		60B4EB60C2733BD883D62BDD /* Pods_CatOnCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatOnCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3BC325866C760DD2E2DA87C /* Pods-CatOnCloudUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatOnCloudUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatOnCloudUITests/Pods-CatOnCloudUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E94E8F06AB7F12190997D59E /* Pods-CatOnCloudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatOnCloudTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatOnCloudTests/Pods-CatOnCloudTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		501931091F8B1EBF00E97990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157DC06F3FA9113875C4749B /* Pods_CatOnCloud.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5019311D1F8B1EBF00E97990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9FF9351DB605C7635D5898 /* Pods_CatOnCloudTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		501931281F8B1EBF00E97990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0F426794B7C920A5E59E27 /* Pods_CatOnCloudUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3978BC090A44EE8B60E5E085 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				396885F400EF903812CC1D72 /* Pods-CatOnCloud.debug.xcconfig */,
+				13A85CE0F5593BA44CD433E8 /* Pods-CatOnCloud.release.xcconfig */,
+				2957B0794B8CD25F575B326C /* Pods-CatOnCloudTests.debug.xcconfig */,
+				E94E8F06AB7F12190997D59E /* Pods-CatOnCloudTests.release.xcconfig */,
+				D3BC325866C760DD2E2DA87C /* Pods-CatOnCloudUITests.debug.xcconfig */,
+				1D28788D126D0FF72DC9E204 /* Pods-CatOnCloudUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		501931031F8B1EBF00E97990 = {
+			isa = PBXGroup;
+			children = (
+				5019310E1F8B1EBF00E97990 /* CatOnCloud */,
+				501931231F8B1EBF00E97990 /* CatOnCloudTests */,
+				5019312E1F8B1EBF00E97990 /* CatOnCloudUITests */,
+				FFB35E9A1597421613434B11 /* Frameworks */,
+				3978BC090A44EE8B60E5E085 /* Pods */,
+				5019310D1F8B1EBF00E97990 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5019310D1F8B1EBF00E97990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5019310C1F8B1EBF00E97990 /* CatOnCloud.app */,
+				501931201F8B1EBF00E97990 /* CatOnCloudTests.xctest */,
+				5019312B1F8B1EBF00E97990 /* CatOnCloudUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5019310E1F8B1EBF00E97990 /* CatOnCloud */ = {
+			isa = PBXGroup;
+			children = (
+				501931401F8B4A5A00E97990 /* Home */,
+				5019313D1F8B1F6900E97990 /* Login */,
+				5019310F1F8B1EBF00E97990 /* AppDelegate.swift */,
+				501931161F8B1EBF00E97990 /* Assets.xcassets */,
+				5019311B1F8B1EBF00E97990 /* Info.plist */,
+				501931181F8B1EBF00E97990 /* LaunchScreen.storyboard */,
+				501931131F8B1EBF00E97990 /* Main.storyboard */,
+				505FCA371F9F1FA70057AB7E /* R.generated.swift */,
+			);
+			path = CatOnCloud;
+			sourceTree = "<group>";
+		};
+		501931231F8B1EBF00E97990 /* CatOnCloudTests */ = {
+			isa = PBXGroup;
+			children = (
+				501931261F8B1EBF00E97990 /* Info.plist */,
+				5085B8071F8F1AAF00433A74 /* LoginViewModelSpec.swift */,
+			);
+			path = CatOnCloudTests;
+			sourceTree = "<group>";
+		};
+		5019312E1F8B1EBF00E97990 /* CatOnCloudUITests */ = {
+			isa = PBXGroup;
+			children = (
+				502DECCE1F983E220031D4DC /* CatOnCloudUITests-Bridging-Header.h */,
+				501931311F8B1EBF00E97990 /* Info.plist */,
+				502DECCF1F983E220031D4DC /* LoginUITests.swift */,
+			);
+			path = CatOnCloudUITests;
+			sourceTree = "<group>";
+		};
+		5019313D1F8B1F6900E97990 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				501931111F8B1EBF00E97990 /* LoginViewController.swift */,
+				5019313E1F8B1FF800E97990 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		501931401F8B4A5A00E97990 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				50D81A8C1FA0041000F4FC1B /* HomeCellModel.swift */,
+				5028B5921F9DA5C500250FA2 /* HomeCellViewModel.swift */,
+				50B4EF4A1F9DAC0700063B66 /* HomeTableViewCell.swift */,
+				501931411F8B4A7100E97990 /* HomeViewController.swift */,
+				5028B5901F9D8F3E00250FA2 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FFB35E9A1597421613434B11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60B4EB60C2733BD883D62BDD /* Pods_CatOnCloud.framework */,
+				082B5054E76F751EC29B4D3C /* Pods_CatOnCloudTests.framework */,
+				287257DBDC95D4ED147C178C /* Pods_CatOnCloudUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5019310B1F8B1EBF00E97990 /* CatOnCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 501931341F8B1EBF00E97990 /* Build configuration list for PBXNativeTarget "CatOnCloud" */;
+			buildPhases = (
+				8D1C0665E220B7F405388EFA /* [CP] Check Pods Manifest.lock */,
+				5054D0D61F9F1F500060956E /* ShellScript */,
+				501931081F8B1EBF00E97990 /* Sources */,
+				501931091F8B1EBF00E97990 /* Frameworks */,
+				5019310A1F8B1EBF00E97990 /* Resources */,
+				D58CDA116FF1AD4D85FC54B9 /* [CP] Copy Pods Resources */,
+				3AD19C929AB111C18AB677A4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatOnCloud;
+			productName = CatOnCloud;
+			productReference = 5019310C1F8B1EBF00E97990 /* CatOnCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5019311F1F8B1EBF00E97990 /* CatOnCloudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 501931371F8B1EBF00E97990 /* Build configuration list for PBXNativeTarget "CatOnCloudTests" */;
+			buildPhases = (
+				556BB9152A08CAB6AED002A1 /* [CP] Check Pods Manifest.lock */,
+				5019311C1F8B1EBF00E97990 /* Sources */,
+				5019311D1F8B1EBF00E97990 /* Frameworks */,
+				5019311E1F8B1EBF00E97990 /* Resources */,
+				412DA64265F7009CB7F96271 /* [CP] Embed Pods Frameworks */,
+				6EEB2B8498AD3523AA5712C9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				501931221F8B1EBF00E97990 /* PBXTargetDependency */,
+			);
+			name = CatOnCloudTests;
+			productName = CatOnCloudTests;
+			productReference = 501931201F8B1EBF00E97990 /* CatOnCloudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5019312A1F8B1EBF00E97990 /* CatOnCloudUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5019313A1F8B1EBF00E97990 /* Build configuration list for PBXNativeTarget "CatOnCloudUITests" */;
+			buildPhases = (
+				EF928366961826D7254BAE77 /* [CP] Check Pods Manifest.lock */,
+				501931271F8B1EBF00E97990 /* Sources */,
+				501931281F8B1EBF00E97990 /* Frameworks */,
+				501931291F8B1EBF00E97990 /* Resources */,
+				EE7BA42F6BE5315494886F61 /* [CP] Embed Pods Frameworks */,
+				6047D76EB8C42CEC0A632CCD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5019312D1F8B1EBF00E97990 /* PBXTargetDependency */,
+			);
+			name = CatOnCloudUITests;
+			productName = CatOnCloudUITests;
+			productReference = 5019312B1F8B1EBF00E97990 /* CatOnCloudUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		501931041F8B1EBF00E97990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = GQ;
+				TargetAttributes = {
+					5019310B1F8B1EBF00E97990 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					5019311F1F8B1EBF00E97990 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5019310B1F8B1EBF00E97990;
+					};
+					5019312A1F8B1EBF00E97990 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5019310B1F8B1EBF00E97990;
+					};
+				};
+			};
+			buildConfigurationList = 501931071F8B1EBF00E97990 /* Build configuration list for PBXProject "CatOnCloud" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 501931031F8B1EBF00E97990;
+			productRefGroup = 5019310D1F8B1EBF00E97990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5019310B1F8B1EBF00E97990 /* CatOnCloud */,
+				5019311F1F8B1EBF00E97990 /* CatOnCloudTests */,
+				5019312A1F8B1EBF00E97990 /* CatOnCloudUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5019310A1F8B1EBF00E97990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5019311A1F8B1EBF00E97990 /* LaunchScreen.storyboard in Resources */,
+				501931171F8B1EBF00E97990 /* Assets.xcassets in Resources */,
+				501931151F8B1EBF00E97990 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5019311E1F8B1EBF00E97990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		501931291F8B1EBF00E97990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AD19C929AB111C18AB677A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloud/Pods-CatOnCloud-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloud/Pods-CatOnCloud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		412DA64265F7009CB7F96271 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloudTests/Pods-CatOnCloudTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloudTests/Pods-CatOnCloudTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5054D0D61F9F1F500060956E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
+		556BB9152A08CAB6AED002A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatOnCloudTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6047D76EB8C42CEC0A632CCD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloudUITests/Pods-CatOnCloudUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EEB2B8498AD3523AA5712C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloudTests/Pods-CatOnCloudTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D1C0665E220B7F405388EFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatOnCloud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D58CDA116FF1AD4D85FC54B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloud/Pods-CatOnCloud-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE7BA42F6BE5315494886F61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloudUITests/Pods-CatOnCloudUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF928366961826D7254BAE77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatOnCloudUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		501931081F8B1EBF00E97990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5028B5931F9DA5C500250FA2 /* HomeCellViewModel.swift in Sources */,
+				501931121F8B1EBF00E97990 /* LoginViewController.swift in Sources */,
+				505FCA381F9F1FA70057AB7E /* R.generated.swift in Sources */,
+				5028B5911F9D8F3E00250FA2 /* HomeViewModel.swift in Sources */,
+				501931101F8B1EBF00E97990 /* AppDelegate.swift in Sources */,
+				50D81A8D1FA0041000F4FC1B /* HomeCellModel.swift in Sources */,
+				5019313F1F8B1FF800E97990 /* LoginViewModel.swift in Sources */,
+				50B4EF4B1F9DAC0700063B66 /* HomeTableViewCell.swift in Sources */,
+				501931421F8B4A7100E97990 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5019311C1F8B1EBF00E97990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5085B8081F8F1AAF00433A74 /* LoginViewModelSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		501931271F8B1EBF00E97990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502DECD01F983E220031D4DC /* LoginUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		501931221F8B1EBF00E97990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5019310B1F8B1EBF00E97990 /* CatOnCloud */;
+			targetProxy = 501931211F8B1EBF00E97990 /* PBXContainerItemProxy */;
+		};
+		5019312D1F8B1EBF00E97990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5019310B1F8B1EBF00E97990 /* CatOnCloud */;
+			targetProxy = 5019312C1F8B1EBF00E97990 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		501931131F8B1EBF00E97990 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				501931141F8B1EBF00E97990 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		501931181F8B1EBF00E97990 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				501931191F8B1EBF00E97990 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		501931321F8B1EBF00E97990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		501931331F8B1EBF00E97990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		501931351F8B1EBF00E97990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 396885F400EF903812CC1D72 /* Pods-CatOnCloud.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3V7R4799K;
+				INFOPLIST_FILE = CatOnCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GQ.CatOnCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		501931361F8B1EBF00E97990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A85CE0F5593BA44CD433E8 /* Pods-CatOnCloud.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3V7R4799K;
+				INFOPLIST_FILE = CatOnCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GQ.CatOnCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		501931381F8B1EBF00E97990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2957B0794B8CD25F575B326C /* Pods-CatOnCloudTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3V7R4799K;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = CatOnCloudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GQ.CatOnCloudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatOnCloud.app/CatOnCloud";
+			};
+			name = Debug;
+		};
+		501931391F8B1EBF00E97990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94E8F06AB7F12190997D59E /* Pods-CatOnCloudTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3V7R4799K;
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = CatOnCloudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GQ.CatOnCloudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatOnCloud.app/CatOnCloud";
+			};
+			name = Release;
+		};
+		5019313B1F8B1EBF00E97990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3BC325866C760DD2E2DA87C /* Pods-CatOnCloudUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3V7R4799K;
+				INFOPLIST_FILE = CatOnCloudUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GQ.CatOnCloudUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CatOnCloudUITests/CatOnCloudUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatOnCloud;
+			};
+			name = Debug;
+		};
+		5019313C1F8B1EBF00E97990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D28788D126D0FF72DC9E204 /* Pods-CatOnCloudUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3V7R4799K;
+				INFOPLIST_FILE = CatOnCloudUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GQ.CatOnCloudUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CatOnCloudUITests/CatOnCloudUITests-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatOnCloud;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		501931071F8B1EBF00E97990 /* Build configuration list for PBXProject "CatOnCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501931321F8B1EBF00E97990 /* Debug */,
+				501931331F8B1EBF00E97990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		501931341F8B1EBF00E97990 /* Build configuration list for PBXNativeTarget "CatOnCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501931351F8B1EBF00E97990 /* Debug */,
+				501931361F8B1EBF00E97990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		501931371F8B1EBF00E97990 /* Build configuration list for PBXNativeTarget "CatOnCloudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501931381F8B1EBF00E97990 /* Debug */,
+				501931391F8B1EBF00E97990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5019313A1F8B1EBF00E97990 /* Build configuration list for PBXNativeTarget "CatOnCloudUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5019313B1F8B1EBF00E97990 /* Debug */,
+				5019313C1F8B1EBF00E97990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 501931041F8B1EBF00E97990 /* Project object */;
+}
