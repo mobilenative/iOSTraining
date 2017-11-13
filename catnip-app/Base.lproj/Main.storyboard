@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qFu-mT-Pdf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="catnip_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="login_head" translatesAutoresizingMaskIntoConstraints="NO" id="a9o-cl-Wtu">
+                                <rect key="frame" x="72" y="72" width="231" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="O4Z-9A-vpk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat On Cloud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQO-fH-vMB">
+                                <rect key="frame" x="92" y="133" width="190" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" name="Blush"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d6s-yc-ED7">
+                                <rect key="frame" x="72" y="236" width="231" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FXd-g9-str">
+                                <rect key="frame" x="72" y="310" width="231" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKs-vz-srO">
+                                <rect key="frame" x="168" y="384" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="INC-8C-8Cq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGd-qI-tnY">
+                                <rect key="frame" x="72" y="458" width="231" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" name="Greyish"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Pale Grey"/>
+                        <constraints>
+                            <constraint firstItem="a9o-cl-Wtu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Fa-f9-zvq"/>
+                            <constraint firstItem="FXd-g9-str" firstAttribute="top" secondItem="d6s-yc-ED7" secondAttribute="bottom" constant="44" id="Afo-RQ-zuh"/>
+                            <constraint firstItem="EGd-qI-tnY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BTl-zT-s6L"/>
+                            <constraint firstItem="d6s-yc-ED7" firstAttribute="top" secondItem="eQO-fH-vMB" secondAttribute="bottom" constant="64" id="F82-id-Kkp"/>
+                            <constraint firstItem="FXd-g9-str" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GVh-z5-hHn"/>
+                            <constraint firstItem="gKs-vz-srO" firstAttribute="top" secondItem="FXd-g9-str" secondAttribute="bottom" constant="44" id="I5g-fe-MOM"/>
+                            <constraint firstItem="gKs-vz-srO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Idv-hg-OzB"/>
+                            <constraint firstItem="eQO-fH-vMB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SvQ-1W-hak"/>
+                            <constraint firstItem="FXd-g9-str" firstAttribute="width" secondItem="d6s-yc-ED7" secondAttribute="width" id="eMn-WQ-FSe"/>
+                            <constraint firstItem="eQO-fH-vMB" firstAttribute="top" secondItem="a9o-cl-Wtu" secondAttribute="bottom" constant="8" id="rmg-em-2U4"/>
+                            <constraint firstItem="d6s-yc-ED7" firstAttribute="width" secondItem="a9o-cl-Wtu" secondAttribute="width" id="soG-Aa-hO0"/>
+                            <constraint firstItem="a9o-cl-Wtu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="uPr-Al-Dsd"/>
+                            <constraint firstItem="d6s-yc-ED7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vmk-kd-VJm"/>
+                            <constraint firstItem="EGd-qI-tnY" firstAttribute="top" secondItem="gKs-vz-srO" secondAttribute="bottom" constant="44" id="wkh-mW-Rvm"/>
+                            <constraint firstItem="EGd-qI-tnY" firstAttribute="width" secondItem="a9o-cl-Wtu" secondAttribute="width" id="z8E-aA-auB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelLoginError" destination="EGd-qI-tnY" id="NvY-Js-4CS"/>
+                        <outlet property="textFieldName" destination="d6s-yc-ED7" id="jdQ-jx-bpi"/>
+                        <outlet property="textFieldPassword" destination="FXd-g9-str" id="g0p-xc-fr3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="-1462"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yY6-mB-Alj">
+            <objects>
+                <navigationController id="qFu-mT-Pdf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ynX-3W-E9l">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MVt-bH-3Cx" kind="relationship" relationship="rootViewController" id="HZ1-aD-qmX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3l-Oz-0BH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="-662"/>
+        </scene>
+        <!--Main Screen View Controller-->
+        <scene sceneID="eTl-TV-IxW">
+            <objects>
+                <viewController id="MVt-bH-3Cx" customClass="MainScreenViewController" customModule="catnip_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6jc-ho-8Jd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="lEQ-qn-k6D"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xmZ-5H-Oks"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="loginSegue" id="geN-g7-pIS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kV7-G4-NdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113" y="-663"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login_head" width="231" height="53"/>
+        <namedColor name="Blush">
+            <color red="0.94901960784313721" green="0.51764705882352946" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Greyish">
+            <color red="0.67450980392156867" green="0.65490196078431373" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Pale Grey">
+            <color red="0.95686274509803926" green="0.96078431372549022" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
